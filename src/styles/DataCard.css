@@ -1,0 +1,32 @@
+.tri-card {
+    display: flex;
+    flex-direction: column;background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 5px 10px;
+    gap: 10px;
+  }
+  
+
+ /* Responsive Styles */
+/* Small devices (landscape phones) */
+@media (max-width: 576px) {
+    /* .tri-card {
+        flex-direction: row;
+      } */
+  }
+  
+  /* Medium devices (tablets) */
+  @media (min-width: 768px) {
+    /* Styles for medium devices and up */
+  }
+  
+  /* Large devices (desktops) */
+  @media (min-width: 992px) {
+    /* Styles for large devices and up */
+  }
+  
+  /* Extra large devices (large desktops) */
+  @media (min-width: 1200px) {
+    /* Styles for extra large devices and up */
+  }

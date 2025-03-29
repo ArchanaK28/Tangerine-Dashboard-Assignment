@@ -1,0 +1,107 @@
+  .pie-chart-container {
+    background-color: white;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    padding: 20px;
+    height: 85%;
+  }
+  
+  .pie-chart-container .pie-chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .pie-chart-container .pie-chart-header h3 {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .pie-chart-container .pie-chart-content {
+    display: flex;
+    align-items: center; 
+    justify-content: space-evenly;
+    padding: -50px 50px;   
+  }
+  
+  .pie-chart-container .pie-chart-content .pie-chart-graph {
+    width: 30%;
+    height: 270px;
+  }
+
+  .pie-chart-container .pie-chart-content .pie-chart-labels {
+    font-size: small;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .pie-chart-container .pie-chart-content .pie-chart-labels .channel-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .pie-chart-container .pie-chart-content .pie-chart-labels .channel-label .channel-color {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+  
+  .pie-chart-container .pie-chart-content .pie-chart-labels .channel-details {
+    /* display: flex; */
+    flex-direction: column;
+  }
+
+  .pie-chart-container .pie-chart-content .pie-chart-labels .channel-details .channel-name {
+    font-weight: 600;
+    color: #333;
+  }
+
+  .pie-chart-container .pie-chart-content .pie-chart-graph .card-footer {
+    color: #000000;
+    border-top: 1px solid rgb(221, 221, 221);
+    margin-top: -62px;
+  }
+
+  .pie-chart-container .sub-text {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -15px;
+  }
+
+  .pie-chart-container .sub-text p {
+    font-size: 12px;
+    padding: 10px 0px;
+  }
+
+  .pie-chart-container .sub-text .btn {
+    padding: 10px 20px;
+    background-color: #efefef;
+    border: none;
+    border-radius: 5px;
+    font-size: 10px;
+  }
+    
+  @media (max-width: 768px) {
+    .pie-chart-content {
+      flex-direction: column;
+    }
+  
+    .pie-chart-container .pie-chart-content .pie-chart-graph,
+    .pie-chart-container .pie-chart-content .pie-chart-labels {
+      width: 100%;
+    }
+  
+    .pie-chart-container .pie-chart-content .pie-chart-graph .card-footer {
+      margin-top: -2px;
+    }
+    .pie-chart-container .sub-text .btn { 
+      border-radius: 1px solid red;
+    }
+  }
+  
+  

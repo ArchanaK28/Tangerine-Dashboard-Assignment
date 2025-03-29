@@ -1,0 +1,99 @@
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+}
+
+.header-left h1 {
+  font-size: 1.5rem;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  margin-right: 15px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.header-icons span {
+  margin-left: 10px;
+  cursor: pointer;
+}
+.sales-active {
+  font-weight: 500;
+}
+.sales-active:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.dashboard-tab {
+  font-weight: 300;
+}
+.dashboard-tab:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.home-logo:hover {
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .header-left {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .header-left h1 {
+    font-size: 1.2rem;
+  }
+
+  .header-right {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+
+  .search-input {
+    width: 100%;
+    margin-right: 0;
+    padding: 6px;
+  }
+
+  .header-icons {
+    display: flex;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .dashboard-header {
+    padding: 15px;
+  }
+
+  .header-left h1 {
+    font-size: 1.3rem;
+  }
+
+  .search-input {
+    width: 180px;
+    padding: 7px;
+  }
+
+  .header-icons span {
+    font-size: 1.2rem;
+  }
+}

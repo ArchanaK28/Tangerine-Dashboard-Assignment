@@ -1,0 +1,81 @@
+.sales-country-data {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  padding: 20px;
+  }
+  
+  .sales-country-data .sales-by-country-container h3 {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .sales-country-data .sales-by-country-container .sales-country-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .sales-country-table thead {
+  border-bottom: 1px solid #eee;
+}
+
+.sales-country-table th {
+  text-align: left;
+  padding: 10px 0;
+  font-size: 14px;
+  color: #666;
+  font-weight: 500;
+}
+
+.sales-country-table tbody tr {
+  border-bottom: 1px solid #eee;
+}
+
+.sales-country-table td {
+  padding: 1px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.sales-country-table tr:last-child td {
+  border-bottom: none;
+}
+
+ .country-cell {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+ .country-flag {
+  width: 24px;
+  height: 16px;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+ .country-name {
+  font-weight: 400;
+}
+ .country-name  th {
+    padding: 2px;
+    font-size: 11px;
+    display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+@media (max-width: 576px) {
+    .sales-dashboard {
+      flex-direction: column;
+    }
+    .sales-country-data {
+      margin-top: 20px;
+    }
+
+  }

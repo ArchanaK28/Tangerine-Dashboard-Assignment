@@ -1,0 +1,85 @@
+.top-selling-products-section {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.top-selling-products table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.top-selling-products th,
+.top-selling-products td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.top-selling-products .product-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.top-selling-products .product-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.top-selling-products .product-info .positive-order{
+  color: green;
+  padding: 2px;
+  font-size: 11px;
+  display: flex;
+  gap: 10px;
+}
+.top-selling-products .positive-order .positive-order-i{
+ color: black;
+}
+.top-selling-products .upward-arrow {
+  color: green;
+  font-weight: 500;
+  font-size: 15px;
+  
+}
+
+@media (max-width: 576px) {
+  .top-selling-products-section {
+    padding: 10px;
+  }
+  .top-selling-products-section .top-selling-products table thead tr th {
+    font-size: 12px;
+  }
+  .top-selling-products-section .top-selling-products table tbody tr td {
+    font-size: 12px;
+  }
+  .top-selling-products th, .top-selling-products td {
+  padding: 5px;
+  }
+  .top-selling-products .product-info {
+    display: flex;
+    align-items: center;
+  }
+  .top-selling-products .product-info .nike-product-name {
+    font-size: 10px;
+  }
+  .top-selling-products .product-info img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+  .top-selling-products .product-info .positive-order{
+    color: green;
+    padding: 2px;
+    font-size: 12px;
+    display: flex;
+    
+  }
+  .top-selling-products .upward-arrow {
+    color: green;
+    font-size: 12px;
+    
+  }
+}

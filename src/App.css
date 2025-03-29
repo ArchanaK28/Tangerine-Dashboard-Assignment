@@ -1,0 +1,80 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.app-main-container {
+    display: flex;
+    padding: 25px 10px;
+}
+.main-container {
+    display: block;
+    flex-direction: column;
+    width: 100%;
+}
+
+.main-container .card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 0px;
+}
+
+.main-container .chart-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+    padding: 20px 0px 0px 0px;
+}
+
+.main-container .chart-container .piechart-chart-container {
+    display: grid;
+}
+.main-container .chart-container .linegraph-chart-container{
+    display: grid;
+}
+
+.main-container .countrysales-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+    padding: 0px 0px 20px 0px;
+}
+
+.main-container .countrysales-container .bar-chart-container {
+    display: grid;
+}
+.main-container .countrysales-container .countrysales-chart-container{
+    display: grid;
+    width: 100%;
+}
+
+.main-container .top-selling-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+@media (max-width: 576px) {
+    .app-main-container {
+        padding-bottom: 90px;
+    }
+    
+    .main-container {
+        overflow-x: hidden;
+    }
+    
+    .main-container .card-container {
+        grid-template-columns: 1fr;
+    }
+
+    .main-container .chart-container {
+        grid-template-columns: 1fr;
+    }
+
+    .main-container .countrysales-container {
+        grid-template-columns: 1fr;
+    }
+    .main-container .countrysales-container .countrysales-chart-container{
+        grid-template-columns: 1fr;
+    }
+  }

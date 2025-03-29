@@ -1,0 +1,42 @@
+.line-graph-data-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 20px 20px;
+    height: 85%;
+  }
+  
+  .line-graph-data-card .line-graph-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .line-graph-data-card .line-graph-header h3 {
+    margin: 0;
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .line-graph-data-card .line-graph-header .info-icon {
+    cursor: pointer;
+    opacity: 0.6;
+  }
+  
+  .line-graph-labels {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .lines-container {
+    position: relative;
+    width: 100%;
+    height: 300px; 
+  }
